@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.heroSection{
+    width: 100%;
+    background: url(./images/heroSectionBackground.png);
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    position: relative;
+    background-position: center;
+    height: 65vh;
+}
+
+.navBar{
+    width: 70%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 auto;
+}
+.font-awesome{
+    padding: 0 4px;
+    color: white;
+    display: none;
+}
+
+.listItems{
+    display: flex;
+    list-style: none;
+}
+.links{
+    padding: 0 19px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.heroSection_div{
+    margin-left: auto;
+    margin-right: auto;
+    top:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+.heroSection_heading{
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 350;
+}
+
+.heroSection_div_contents{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.heroSection_searchBar_location{
+    width: 30%;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: hidden;
+    border-right: 2px solid black;
+    
+}
+ .heroSection_searchBar_restaurants{
+    width: 70%;
+    height: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: hidden;
+} 
+
+.searchBar_contents{
+    display: flex;
+    position: relative;
+    width: 100%;
+
+} 
+
+
+
+.we-offer{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.card-contents{
+    margin: 80px auto;
+    display: grid;
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.card{
+    border: 1px solid #e0e0e0;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 2;
+    transition: all 200ms linear 0s;
+}
+.card-image{
+    width: 100%;
+    height: 60%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card-description{
+    padding: 20px;
+    font-weight: 350px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.collection-cards{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.headerCollection{
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.headerCollection-insider{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    color: orange;
+}
+.collection-contents{
+    position: relative;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.gridCollections{
+    display: grid;
+    gap: 29px;
+    margin: 0 auto;
+    max-width: 1200px;
+    place-content: center;
+    width: 100%;
+    padding: 60px;
+    
+
+}
+.collections{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    object-fit: cover;
+    background-position: center;
+    transition: all 200ms linear 0s;
+    
+    
+
+}
+.collections-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* position: absolute; */
+    z-index: -1;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 17px;
+    font-size: 1rem;
+    
+}
+
+.collections:hover{
+    transform: scale(1.1);
+}
+
+.getApp-section{
+    width: 100%;
+    height: 50vh;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.getApp-imageDivision{
+    position: relative;
+    
+    box-sizing: border-box;
+}
+.getApp-image{
+    position: relative;
+    width: 270px;
+}
+.getApp-contents{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    gap: 10px;
+    width: 450px;
+    position: relative;
+    
+}
+.radiobtns{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.radiobtns-title{
+    color: black;
+}
+
+.inputoption{
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+}
+.shareappbtn{
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 1000px){
+    .links{
+        display: none;
+
+    }
+    .font-awesome{
+        display: flex;
+    }
+    .heroSection{
+        min-height: 85vh;
+    }
+    .searchBar_contents{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .heroSection_div{
+        top:30%;
+    }
+    .heroSection_searchBar_location{
+        border-radius: 20px;
+    }
+    .heroSection_searchBar_restaurants{
+        border-radius: 20px;
+    }
+    .card-contents{
+        grid-template-columns: repeat(2,1fr);
+        padding: 40px;
+    }
+    .gridCollections{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .headerCollection-heading{
+        text-align: center;
+    }
+
+}
+@media (min-width: 1001px){
+    .card-contents{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .gridCollections{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+
+
+@media (max-width:600px){
+    .card-contents{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gridCollections{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .headerCollection-insider , .headerCollection-heading{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .getApp-section{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        
+    }
+    .getApp-contents-para{
+        width: 50%;
+    }
+    .getApp-contents{
+        justify-content: center;
+        align-items: center;
+    }
+
+}
